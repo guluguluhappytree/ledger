@@ -1,0 +1,18 @@
+{
+  "name": "ledger",
+  "version": "1.0.0",
+  "private": true,
+  "description": "智能记账 — 日常收支记录",
+  "workspaces": [
+    "apps/ledger",
+    "packages/lifestyle-sync",
+    "packages/shared"
+  ],
+  "scripts": {
+    "dev": "npm run dev -w ledger",
+    "build": "npm run icons -w ledger && npm run build -w ledger"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

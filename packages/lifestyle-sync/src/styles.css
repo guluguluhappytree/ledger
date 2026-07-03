@@ -1,0 +1,222 @@
+.sync-account-btn {
+  position: fixed;
+  top: calc(var(--safe-top, 0px) + 12px);
+  right: calc(var(--safe-right, 0px) + 12px);
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  color: var(--text-secondary, #787774);
+  background: var(--bg-hover, rgba(55, 53, 47, 0.06));
+  flex-shrink: 0;
+}
+
+.sync-account-btn:hover {
+  background: var(--border, rgba(55, 53, 47, 0.09));
+  color: var(--text, #37352f);
+}
+
+.sync-account-btn__icon {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.sync-account-btn__dot {
+  position: absolute;
+  right: 6px;
+  bottom: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #9b9a97;
+  border: 1.5px solid var(--bg, #fff);
+}
+
+.sync-account-btn--synced .sync-account-btn__dot {
+  background: #448361;
+}
+
+.sync-account-btn--local .sync-account-btn__dot {
+  background: #d9730d;
+}
+
+.sync-account-btn--syncing .sync-account-btn__dot {
+  background: #2383e2;
+}
+
+.sync-account-btn--error .sync-account-btn__dot {
+  background: #d44c47;
+}
+
+.app-header {
+  position: relative;
+  padding-right: 48px;
+}
+
+.app-header__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.app-header__top .app-header__text {
+  flex: 1;
+  min-width: 0;
+}
+
+.sync-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: rgba(15, 15, 15, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.sync-modal {
+  position: relative;
+  width: min(420px, 100%);
+  background: var(--bg, #fff);
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+}
+
+.sync-modal__title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.sync-modal__desc {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #787774);
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.sync-modal__email {
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.sync-modal__status {
+  font-size: 0.875rem;
+  color: var(--text-secondary, #787774);
+  margin-bottom: 16px;
+}
+
+.sync-modal__status--synced {
+  color: #448361;
+}
+
+.sync-modal__status--error {
+  color: #d44c47;
+}
+
+.sync-modal__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.sync-modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sync-tabs {
+  display: flex;
+  gap: 4px;
+  background: var(--bg-subtle, #f7f6f3);
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.sync-tab {
+  flex: 1;
+  padding: 8px;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: var(--text-secondary, #787774);
+}
+
+.sync-tab--active {
+  background: var(--bg, #fff);
+  color: var(--text, #37352f);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+
+.sync-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 0.8125rem;
+  color: var(--text-secondary, #787774);
+}
+
+.sync-field input {
+  padding: 10px 12px;
+  border: 1px solid var(--border-strong, rgba(55, 53, 47, 0.16));
+  border-radius: 8px;
+  font-size: 1rem;
+  color: var(--text, #37352f);
+  background: var(--bg, #fff);
+}
+
+.sync-field input:focus {
+  outline: 2px solid var(--accent-bg, rgba(35, 131, 226, 0.08));
+  border-color: var(--accent, #2383e2);
+}
+
+.sync-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.9375rem;
+  font-weight: 500;
+}
+
+.sync-btn--primary {
+  background: var(--accent, #2383e2);
+  color: #fff;
+}
+
+.sync-btn--primary:disabled {
+  opacity: 0.6;
+}
+
+.sync-btn--ghost {
+  color: var(--text-secondary, #787774);
+  background: var(--bg-hover, rgba(55, 53, 47, 0.06));
+}
+
+.sync-btn--full {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.sync-modal__error {
+  color: #d44c47;
+  font-size: 0.875rem;
+}
+
+.sync-modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  font-size: 1.25rem;
+  color: var(--text-muted, #9b9a97);
+}
+
+.sync-modal__close:hover {
+  background: var(--bg-hover, rgba(55, 53, 47, 0.06));
+}

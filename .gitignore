@@ -1,0 +1,48 @@
+# Dependencies
+node_modules
+.pnp
+.pnp.js
+
+# Build
+.next
+out
+dist
+build
+*.tsbuildinfo
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Local HTTPS certs (auto-generated)
+scripts/certs/
+
+# IDE
+.idea
+.vscode
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploads (channel media)
+uploads/
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Playwright
+test-results
+playwright-report
+blob-report
+playwright/.cache
+
+# Misc
+coverage
+.turbo
+.vercel
+.env*
