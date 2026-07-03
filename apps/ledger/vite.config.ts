@@ -22,7 +22,7 @@ export default defineConfig(({ mode }) => ({
       description: "日常收支记录",
       themeColor: "#ffffff",
       backgroundColor: "#ffffff",
-      manifestId: "https://ledger-app.vercel.app/",
+      manifestId: "https://ledger-app-delta-orpin.vercel.app/",
       cacheId: "ledger-app-v1",
     }),
   ],
